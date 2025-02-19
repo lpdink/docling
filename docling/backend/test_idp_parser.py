@@ -14,7 +14,7 @@ def walk(idp_raw_result) -> DoclingDocument:
         name="file",
         origin={
             "mimetype": "text/markdown",
-            "binary_hash": 12345678987654321, #TODO: calculate hash
+            "binary_hash": 12345678987654321, # TODO: Implement hash
             "filename": "file.md"
         },
         furniture={
@@ -72,6 +72,8 @@ def walk(idp_raw_result) -> DoclingDocument:
             "annotations": []
         }
 
+    # TODO: Implement table node creation
+
     # Process items and build tree structure
     text_index = 0
     picture_index = 0
@@ -85,6 +87,7 @@ def walk(idp_raw_result) -> DoclingDocument:
             node = create_picture_node(item, picture_index)
             picture_index += 1
             doc.pictures.append(node)
+        # TODO: elif item["type"] == "table":
         else:
             node = create_text_node(item, text_index)
             text_index += 1
