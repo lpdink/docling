@@ -1,0 +1,481 @@
+[
+    {
+        "firstLinesChars": 0,
+        "level": 0,
+        "blocks": [
+            {
+                "text": "一、适用场景"
+            }
+        ],
+        "markdownContent": "# 一、适用场景  \n\n",
+        "index": 0,
+        "subType": "para_title",
+        "lineHeight": 0,
+        "text": "一、适用场景",
+        "alignment": "left",
+        "type": "title",
+        "pageNum": 0,
+        "uniqueId": "b185b87ccb73f798b64b22c6324f6d29"
+    },
+    {
+        "firstLinesChars": 0,
+        "level": 1,
+        "blocks": [
+            {
+                "text": "1、设置 BI数据快递费用统计方式;"
+            }
+        ],
+        "markdownContent": "1、设置 BI数据快递费用统计方式;  \n\n",
+        "index": 1,
+        "subType": "para",
+        "lineHeight": 0,
+        "text": "1、设置 BI数据快递费用统计方式;",
+        "alignment": "left",
+        "type": "text",
+        "pageNum": 0,
+        "uniqueId": "5b6f25214d84de1e943858497374c7bb"
+    },
+    {
+        "level": 2,
+        "markdownContent": "![bbc940dfac24a7b264e53d9cc690d4e4.jpeg](http://docmind-api-cn-hangzhou.oss-cn-hangzhou.aliyuncs.com/1793327297187335/publicDocStreamStructure/docmind-20250213-2c88a1505a82446e9502d190f6fbc71d/0.png?Expires=1739498656&OSSAccessKeyId=LTAI5tQL9bqLHC5HYKV68DA9&Signature=SiQvZTh%2FK0c2sjzypPSwAydWbfQ%3D&x-oss-process=image%2Fcrop%2Cx_217%2Cy_330%2Cw_837%2Ch_392)  \n\n",
+        "index": 2,
+        "subType": "picture",
+        "text": "宁万里牛     销售·   售后~  商品·   采购·   库存·   财务·报表·BIv   设置·合首页经营看板×  成本管理×  费用管理×  业务策略设置×★BI专业版试用到期日期:2024年06月04日平台费用快递费用统计账单获取快递费用:◎预估快递费用数据分类v快递对账后更新快递费用分摊方式:按金额分摊√快递费用统计提示:自定义费用             1.请先前往【设置-快递/打印-快递公司】页面设置快递费用规则;2.如需统计实际快递费用,请先前往【财务-快递对账】页面,进行快递对账并完成结算,次日将自动更新快递费用;3.修改配置保存后,次日生效,近3个月内的数据将重新计算;记账分摊订单费用导入",
+        "alignment": "center",
+        "type": "figure",
+        "pageNum": 0,
+        "uniqueId": "bbc940dfac24a7b264e53d9cc690d4e4"
+    },
+    {
+        "firstLinesChars": 0,
+        "level": 1,
+        "blocks": [
+            {
+                "text": "二、️ �快递费用取值顺序"
+            }
+        ],
+        "markdownContent": "## 二、️ �快递费用取值顺序  \n\n",
+        "index": 3,
+        "subType": "para_title",
+        "lineHeight": 0,
+        "text": "二、️ �快递费用取值顺序",
+        "alignment": "left",
+        "type": "title",
+        "pageNum": 0,
+        "uniqueId": "77b907d6ced96b70e7a79f29c9a3a0a7"
+    },
+    {
+        "firstLinesChars": 0,
+        "level": 2,
+        "blocks": [
+            {
+                "text": "审单前取预估快递费用(需要开启对应配置,否则为0)"
+            }
+        ],
+        "markdownContent": "审单前取预估快递费用(需要开启对应配置,否则为0)  \n\n",
+        "index": 4,
+        "subType": "para",
+        "lineHeight": 0,
+        "text": "审单前取预估快递费用(需要开启对应配置,否则为0)",
+        "alignment": "left",
+        "type": "text",
+        "pageNum": 0,
+        "uniqueId": "7f8b5ad09094ef25beb2295b818af891"
+    },
+    {
+        "firstLinesChars": 0,
+        "level": 2,
+        "blocks": [
+            {
+                "text": "审单后,根据商品估重更新预估快递费用"
+            }
+        ],
+        "markdownContent": "审单后,根据商品估重更新预估快递费用  \n\n",
+        "index": 5,
+        "subType": "para",
+        "lineHeight": 0,
+        "text": "审单后,根据商品估重更新预估快递费用",
+        "alignment": "left",
+        "type": "text",
+        "pageNum": 0,
+        "uniqueId": "4455bf18d8e2e41a6107a4021df0ccd5"
+    },
+    {
+        "firstLinesChars": 0,
+        "level": 3,
+        "blocks": [
+            {
+                "text": "称重后,根据商品实际重量更新预估快递费用(需要开启称重环节,否则不更新)"
+            },
+            {
+                "text": "快递对账且结算后,根据账单中的快递费用逐单更新"
+            }
+        ],
+        "markdownContent": "称重后,根据商品实际重量更新预估快递费用(需要开启称重环节,否则不更新)快递对账且结算后,根据账单中的快递费用逐单更新  \n\n",
+        "index": 6,
+        "subType": "para",
+        "lineHeight": 42,
+        "text": "称重后,根据商品实际重量更新预估快递费用(需要开启称重环节,否则不更新)快递对账且结算后,根据账单中的快递费用逐单更新",
+        "alignment": "left",
+        "type": "text",
+        "pageNum": 0,
+        "uniqueId": "cf23a1429afd522c4688a06d76129553"
+    },
+    {
+        "firstLinesChars": 0,
+        "level": 0,
+        "blocks": [
+            {
+                "text": "三、常用操作"
+            }
+        ],
+        "markdownContent": "# 三、常用操作  \n\n",
+        "index": 7,
+        "subType": "para_title",
+        "lineHeight": 0,
+        "text": "三、常用操作",
+        "alignment": "left",
+        "type": "title",
+        "pageNum": 0,
+        "uniqueId": "771995de820ab7e4235bc3db1db08262"
+    },
+    {
+        "firstLinesChars": 0,
+        "level": 1,
+        "blocks": [
+            {
+                "text": "1、系统预估快递费用"
+            }
+        ],
+        "markdownContent": "## 1、系统预估快递费用  \n\n",
+        "index": 8,
+        "subType": "para_title",
+        "lineHeight": 0,
+        "text": "1、系统预估快递费用",
+        "alignment": "left",
+        "type": "title",
+        "pageNum": 0,
+        "uniqueId": "74345bf4ce074812ff10031807ffac61"
+    },
+    {
+        "firstLinesChars": 0,
+        "level": 2,
+        "blocks": [
+            {
+                "text": "在【设置】-【快递公司】-【运费成本设置】中维护好预估快递费用的规则,订单审核后"
+            },
+            {
+                "text": "会根据商品估重和运费规则计算。称重后根据实际重量重新计算。"
+            }
+        ],
+        "markdownContent": "在【设置】-【快递公司】-【运费成本设置】中维护好预估快递费用的规则,订单审核后会根据商品估重和运费规则计算。称重后根据实际重量重新计算。  \n\n",
+        "index": 9,
+        "subType": "para",
+        "lineHeight": 17,
+        "text": "在【设置】-【快递公司】-【运费成本设置】中维护好预估快递费用的规则,订单审核后会根据商品估重和运费规则计算。称重后根据实际重量重新计算。",
+        "alignment": "left",
+        "type": "text",
+        "pageNum": 0,
+        "uniqueId": "37a78aadee8afdbc5b891e2c4436b987"
+    },
+    {
+        "level": 3,
+        "markdownContent": "![3ac279b82b52df3f518f6316936d13d7.jpeg](http://docmind-api-cn-hangzhou.oss-cn-hangzhou.aliyuncs.com/1793327297187335/publicDocStreamStructure/docmind-20250213-2c88a1505a82446e9502d190f6fbc71d/1.png?Expires=1739498656&OSSAccessKeyId=LTAI5tQL9bqLHC5HYKV68DA9&Signature=nof9PMZoBRED4elxnF8Vxe3l8A0%3D&x-oss-process=image%2Fcrop%2Cx_218%2Cy_153%2Cw_835%2Ch_466)  \n\n",
+        "index": 0,
+        "subType": "picture",
+        "text": "宁万里牛售后  商品  购        材务  模表      设    D经递公司X                                                                                                               二步订单Q查询状态  用o延增导出快递公司信息Q远费模板o                                                                             4K第  页/共1百3第记录)H快递编码快递名称     A     电子国单6     打印模      付款                  网a这费或本设置1外时间         13中通-剖多多3京广速递         D     其设通单3            ￥0.00修改|停用这费成本设置例外时间中通-多多2其络快通单3             ￥0.003修改|停用选费成本设置例外时间中通-册多多中清设通                   环多多电子深单一1         ￥0.0                                                         12394修改|停用运费成本级置例外时间           中        中通快递00000O夏马电子单一04         ￥0.0修改|停用运费成本级置例外时间                    顺丰速                   其给快递单3             ￥0.0C5修改|停用运费成本级置例外时间                    顺丰速近                 顺丰_率密电子面单         ￥0.0?修改|停用运费成本设置例外时间                    京东  ④  运费设置-中通-拼多多38惟改停用远费成本设置例外时》修改|停用远费成本设置例外时间@按重量计算按体积计算导AC透择模板一默认运费设算0修改|停用远费成本设置例外时间                   顺申读远默认运费设置:计描比1修改|停用运费或本设置例外时间                    申通快递地区和食库设置(景设置的地区和合库,使用联认设置2修改停用远费或本设置例外时                   天天快递适用地区仓原发货地O运费计算规则设置   计抛比co3修改停用运费或本设置例外时间                                1x保存 A",
+        "alignment": "center",
+        "type": "figure",
+        "pageNum": 1,
+        "uniqueId": "3ac279b82b52df3f518f6316936d13d7"
+    },
+    {
+        "firstLinesChars": 0,
+        "level": 1,
+        "blocks": [
+            {
+                "text": "2、下单预估快递费用"
+            }
+        ],
+        "markdownContent": "## 2、下单预估快递费用  \n\n",
+        "index": 1,
+        "subType": "para_title",
+        "lineHeight": 0,
+        "text": "2、下单预估快递费用",
+        "alignment": "left",
+        "type": "title",
+        "pageNum": 1,
+        "uniqueId": "d4904d7fe86c012b7a088b3d32929081"
+    },
+    {
+        "firstLinesChars": 0,
+        "level": 2,
+        "blocks": [
+            {
+                "text": "使用场景:使用场景:商家发货周期较长,想要提前了解店铺商品经营大致利润;"
+            }
+        ],
+        "markdownContent": "使用场景:使用场景:商家发货周期较长,想要提前了解店铺商品经营大致利润;  \n\n",
+        "index": 2,
+        "subType": "para",
+        "lineHeight": 0,
+        "text": "使用场景:使用场景:商家发货周期较长,想要提前了解店铺商品经营大致利润;",
+        "alignment": "left",
+        "type": "text",
+        "pageNum": 1,
+        "uniqueId": "05779df8f04be800b233005d27639e3c"
+    },
+    {
+        "firstLinesChars": 0,
+        "level": 2,
+        "blocks": [
+            {
+                "text": "如何开启:【ERP-设置-业务策略设置-平台策略页面】,勾选下单时自动计算商品及快递"
+            },
+            {
+                "text": "预估成本配置,保存。"
+            }
+        ],
+        "markdownContent": "如何开启:【ERP-设置-业务策略设置-平台策略页面】,勾选下单时自动计算商品及快递预估成本配置,保存。  \n\n",
+        "index": 3,
+        "subType": "para",
+        "lineHeight": 18,
+        "text": "如何开启:【ERP-设置-业务策略设置-平台策略页面】,勾选下单时自动计算商品及快递预估成本配置,保存。",
+        "alignment": "left",
+        "type": "text",
+        "pageNum": 1,
+        "uniqueId": "ffc3ad4a2ce28779a29bd00a5fa56af6"
+    },
+    {
+        "level": 3,
+        "markdownContent": "![3f429650e51ac61d6353366f567a71a1.jpeg](http://docmind-api-cn-hangzhou.oss-cn-hangzhou.aliyuncs.com/1793327297187335/publicDocStreamStructure/docmind-20250213-2c88a1505a82446e9502d190f6fbc71d/1.png?Expires=1739498656&OSSAccessKeyId=LTAI5tQL9bqLHC5HYKV68DA9&Signature=LLo4p2KDxUX4P8TNnbQZMfzyDOY%3D&x-oss-process=image%2Fcrop%2Cx_216%2Cy_929%2Cw_842%2Ch_413)  \n\n",
+        "index": 4,
+        "subType": "picture",
+        "text": "宁万里牛销售  售后·  商品·  采购~  库存   财务   报表        设置公首页  经营看板   业务策略设置x]02组合商品拆料审单策略口自动拆卸订单中的组合商品(不包含赠品、拆卸节点审核前 v11自动拆单后×,全部√商品拆单策略子商品价格分牌方式:  ◎按价格分摊    )按成本均价备注提取启用白动合单平台策  J3操作                  店镇                                                                 查看详情1则冷|编辑[其他平台]BItest1                                                           查看详情手工开单M下单时自动计算商品及快递预估成本(BI用户建议开启,预估数据更准确》订单评价拦截筑脑  查看说明售后策订单打单(含波次领取))前,发生以下情况,订单自动递交异常:打标策略图订单里有商品申请返款(含关闭)时,整笔订单提交异常环v黑名单                     合并过的订单某单地址变更时其他              订单打单(含波次领取)~后,发生以下情况,订单白动拦截挂起:图订单里有商品申请退款时整单挂起订单里有商品退款成功时拦截订单,人工确认后整单打回审核重走源U整单退款时,拦截订单需要人工确认单据销毁{强烈建议开启,防止订单拦截包裹还发出)以下情况,订单自动挂起",
+        "alignment": "center",
+        "type": "figure",
+        "pageNum": 1,
+        "uniqueId": "3f429650e51ac61d6353366f567a71a1"
+    },
+    {
+        "firstLinesChars": 0,
+        "level": 1,
+        "blocks": [
+            {
+                "text": "3、快递对账后更新结算快递费用"
+            }
+        ],
+        "markdownContent": "## 3、快递对账后更新结算快递费用  \n\n",
+        "index": 5,
+        "subType": "para_title",
+        "lineHeight": 0,
+        "text": "3、快递对账后更新结算快递费用",
+        "alignment": "left",
+        "type": "title",
+        "pageNum": 1,
+        "uniqueId": "ac6df91d4bd4c30e49875a73fd23f1b9"
+    },
+    {
+        "firstLinesChars": 0,
+        "level": 2,
+        "blocks": [
+            {
+                "text": "月末快递公司出账单后,可以在【财务】-【快递对账】导入账单,对账确认无误后,点"
+            },
+            {
+                "text": "击结算确认快递费用差异,第二天 BI将会自动自动更新对账快递费用。"
+            }
+        ],
+        "markdownContent": "月末快递公司出账单后,可以在【财务】-【快递对账】导入账单,对账确认无误后,点击结算确认快递费用差异,第二天 BI将会自动自动更新对账快递费用。  \n\n",
+        "index": 6,
+        "subType": "para",
+        "lineHeight": 18,
+        "text": "月末快递公司出账单后,可以在【财务】-【快递对账】导入账单,对账确认无误后,点击结算确认快递费用差异,第二天 BI将会自动自动更新对账快递费用。",
+        "alignment": "left",
+        "type": "text",
+        "pageNum": 1,
+        "uniqueId": "0e59a296acd6a58d175932da1b604863"
+    },
+    {
+        "level": 2,
+        "markdownContent": "![59a10890e135bfec578ed3f87fe459b9.jpeg](http://docmind-api-cn-hangzhou.oss-cn-hangzhou.aliyuncs.com/1793327297187335/publicDocStreamStructure/docmind-20250213-2c88a1505a82446e9502d190f6fbc71d/2.png?Expires=1739498656&OSSAccessKeyId=LTAI5tQL9bqLHC5HYKV68DA9&Signature=K7D6ZiQp%2BJbFTmxQIZeqeGCYfhw%3D&x-oss-process=image%2Fcrop%2Cx_207%2Cy_171%2Cw_855%2Ch_111)  \n\n",
+        "index": 0,
+        "subType": "none",
+        "text": "丫万里牛售  售后  商品 采购  ① 财务。 服表       分销  设置                                                 a@ooh Q百区1②                                                                                  二同步订单c@对账日期  地时同    结意时间   快递/谢流          快递单号!结算状态:请选择快递对账导入对账年单                                                                                                      50v        :页/共213页(10529第记录)1对账结果查                                                                   快递谢           店铺P                                                         操作品情| m                     202-11-0        达[钟多多]Winnie牌多多店铺￥24.70                             ￥24.70",
+        "alignment": "center",
+        "type": "figure",
+        "pageNum": 2,
+        "uniqueId": "59a10890e135bfec578ed3f87fe459b9"
+    },
+    {
+        "firstLinesChars": 0,
+        "level": 0,
+        "blocks": [
+            {
+                "text": "四、常见问题"
+            }
+        ],
+        "markdownContent": "四、常见问题  \n\n",
+        "index": 1,
+        "subType": "none",
+        "lineHeight": 0,
+        "text": "四、常见问题",
+        "alignment": "left",
+        "type": "text",
+        "pageNum": 2,
+        "uniqueId": "3188c46324372e6322597d49eac8a160"
+    },
+    {
+        "firstLinesChars": 0,
+        "level": 1,
+        "blocks": [
+            {
+                "text": "Q:快递对账后,是否有计划往订单查询、报表洗数据"
+            }
+        ],
+        "markdownContent": "Q:快递对账后,是否有计划往订单查询、报表洗数据  \n\n",
+        "index": 2,
+        "subType": "para",
+        "lineHeight": 0,
+        "text": "Q:快递对账后,是否有计划往订单查询、报表洗数据",
+        "alignment": "left",
+        "type": "text",
+        "pageNum": 2,
+        "uniqueId": "5751128157084be7b88244263e1b36ef"
+    },
+    {
+        "firstLinesChars": 0,
+        "level": 2,
+        "blocks": [
+            {
+                "text": "A:目前销售、售后、都是属于业务线,当业务流程完成后,将不再进行数据调整"
+            }
+        ],
+        "markdownContent": "A:目前销售、售后、都是属于业务线,当业务流程完成后,将不再进行数据调整  \n\n",
+        "index": 3,
+        "subType": "para",
+        "lineHeight": 0,
+        "text": "A:目前销售、售后、都是属于业务线,当业务流程完成后,将不再进行数据调整",
+        "alignment": "left",
+        "type": "text",
+        "pageNum": 2,
+        "uniqueId": "630a82f93d3cb132f7de2fe2bf8587b3"
+    },
+    {
+        "firstLinesChars": 0,
+        "level": 2,
+        "blocks": [
+            {
+                "text": "Q:快递对账后,账单和订单,最终取哪个值"
+            }
+        ],
+        "markdownContent": "Q:快递对账后,账单和订单,最终取哪个值  \n\n",
+        "index": 4,
+        "subType": "para",
+        "lineHeight": 0,
+        "text": "Q:快递对账后,账单和订单,最终取哪个值",
+        "alignment": "left",
+        "type": "text",
+        "pageNum": 2,
+        "uniqueId": "753c042ec2fc0efec6afa00d352e9936"
+    },
+    {
+        "firstLinesChars": 0,
+        "level": 2,
+        "blocks": [
+            {
+                "text": "A:取快递对账中的记账金额;什么是记账金额,"
+            }
+        ],
+        "markdownContent": "A:取快递对账中的记账金额;什么是记账金额,  \n\n",
+        "index": 5,
+        "subType": "para",
+        "lineHeight": 0,
+        "text": "A:取快递对账中的记账金额;什么是记账金额,",
+        "alignment": "left",
+        "type": "text",
+        "pageNum": 2,
+        "uniqueId": "2c64e48c10ac6ce74110a45f5c39309f"
+    },
+    {
+        "firstLinesChars": 0,
+        "level": 1,
+        "blocks": [
+            {
+                "text": "场景一:对快递账单有疑议"
+            }
+        ],
+        "markdownContent": "场景一:对快递账单有疑议  \n\n",
+        "index": 6,
+        "subType": "para",
+        "lineHeight": 0,
+        "text": "场景一:对快递账单有疑议",
+        "alignment": "left",
+        "type": "text",
+        "pageNum": 2,
+        "uniqueId": "f4b9b36652de7d0d489c31b34a50d2e8"
+    },
+    {
+        "firstLinesChars": 0,
+        "level": 2,
+        "blocks": [
+            {
+                "text": "举例:erp系统预估快递费用15元,快递公司账单20元,财务同学发现快递公司有多"
+            },
+            {
+                "text": "收的情况,两方协调后,最终决定18元,那么快递对账再会取18元替换原单的预估快"
+            },
+            {
+                "text": "递费用;"
+            }
+        ],
+        "markdownContent": "举例:erp系统预估快递费用15元,快递公司账单20元,财务同学发现快递公司有多收的情况,两方协调后,最终决定18元,那么快递对账再会取18元替换原单的预估快递费用;  \n\n",
+        "index": 7,
+        "subType": "para",
+        "lineHeight": 16,
+        "text": "举例:erp系统预估快递费用15元,快递公司账单20元,财务同学发现快递公司有多收的情况,两方协调后,最终决定18元,那么快递对账再会取18元替换原单的预估快递费用;",
+        "alignment": "left",
+        "type": "text",
+        "pageNum": 2,
+        "uniqueId": "921abcb76247d88f6ffdb985f822587c"
+    },
+    {
+        "firstLinesChars": 0,
+        "level": 1,
+        "blocks": [
+            {
+                "text": "场景二:对快递账单没疑议"
+            }
+        ],
+        "markdownContent": "## 场景二:对快递账单没疑议  \n\n",
+        "index": 8,
+        "subType": "none",
+        "lineHeight": 0,
+        "text": "场景二:对快递账单没疑议",
+        "alignment": "left",
+        "type": "title",
+        "pageNum": 2,
+        "uniqueId": "b3654aa46cd7cf7504ff7151eef4271f"
+    },
+    {
+        "firstLinesChars": 0,
+        "level": 2,
+        "blocks": [
+            {
+                "text": "举例:用户的实际快递费用直接以快递公司的账单为准时,快递对账后,记账金额默认为"
+            },
+            {
+                "text": "快递账单金额"
+            }
+        ],
+        "markdownContent": "举例:用户的实际快递费用直接以快递公司的账单为准时,快递对账后,记账金额默认为快递账单金额  \n\n",
+        "index": 9,
+        "subType": "para",
+        "lineHeight": 17,
+        "text": "举例:用户的实际快递费用直接以快递公司的账单为准时,快递对账后,记账金额默认为快递账单金额",
+        "alignment": "left",
+        "type": "text",
+        "pageNum": 2,
+        "uniqueId": "99de8b0d85c622da6f35bd0454b3a9d4"
+    }
+]
