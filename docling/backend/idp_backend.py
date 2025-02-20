@@ -189,7 +189,7 @@ class IDPChunk(BaseModel):
 
 
 class IDPChunker(BaseChunker):
-    MAX_CHUNK_SIZE: int = 768  # 根据BERT等模型优化设置
+    MAX_CHUNK_SIZE: int = 768  # 根据BERT等模型优化设置, text-embddding可以到1024等
     MIN_CHUNK_SIZE: int = 256  # 防止过小碎片
     CONTEXT_LEVELS: int = 3  # 保持3层上下文
 
@@ -256,7 +256,8 @@ class IDPChunker(BaseChunker):
                 self._split_large_node(node_text, new_parent_path, chunks)
             else:
                 # 创建新块并尝试合并子块
-                new_chunk = IDPChunk(text=node_text, image=[str(node.image.uri)])
+                image = [str(node.image.uri)] if isinstance(node, PictureItem) else []
+                new_chunk = IDPChunk(text=node_text, image=image)
                 new_size = node_size
                 for child_chunk, _ in child_chunks:
                     if new_size + child_chunk.size > self.MAX_CHUNK_SIZE:
