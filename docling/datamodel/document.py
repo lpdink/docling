@@ -52,6 +52,7 @@ from docling.backend.abstract_backend import (
     AbstractDocumentBackend,
     PaginatedDocumentBackend,
 )
+from docling.backend.idp_backend import IDPDocumentBackend
 from docling.datamodel.base_models import (
     AssembledUnit,
     ConversionStatus,
@@ -234,12 +235,12 @@ class _DocumentConversionInput(BaseModel):
     limits: Optional[DocumentLimits] = DocumentLimits()
 
     def docs(
-        self, format_options: Dict[InputFormat, "FormatOption"]
+        self, format_options: Dict[InputFormat, "FormatOption"], use_idp: bool = False
     ) -> Iterable[InputDocument]:
         for item in self.path_or_stream_iterator:
             obj = (
                 resolve_source_to_stream(item, self.headers)
-                if isinstance(item, str)
+                if isinstance(item, str) and not use_idp
                 else item
             )
             format = self._guess_format(obj)
@@ -251,6 +252,9 @@ class _DocumentConversionInput(BaseModel):
                 backend = _DummyBackend
             else:
                 backend = format_options[format].backend
+
+            if use_idp:
+                backend = IDPDocumentBackend
 
             if isinstance(obj, Path):
                 yield InputDocument(

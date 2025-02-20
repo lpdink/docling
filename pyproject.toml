@@ -65,6 +65,9 @@ transformers = [
 ]
 pillow = ">=10.0.0,<12.0.0"
 tqdm = "^4.65.0"
+alibabacloud-tea-openapi = "^0.3.12"
+alibabacloud-docmind-api20220711 = "^1.4.4"
+aiofiles = "^24.1.0"
 
 [tool.poetry.group.dev.dependencies]
 black = {extras = ["jupyter"], version = "^24.4.2"}
@@ -85,6 +88,7 @@ ipywidgets = "^8.1.5"
 nbqa = "^1.9.0"
 types-openpyxl = "^3.1.5.20241114"
 types-tqdm = "^4.67.0.20241221"
+fastapi = {extras = ["all"], version = "^0.115.8"}
 
 [tool.poetry.group.docs.dependencies]
 mkdocs-material = "^9.5.40"
@@ -131,6 +135,11 @@ rapidocr = ["rapidocr-onnxruntime", "onnxruntime"]
 [tool.poetry.scripts]
 docling = "docling.cli.main:app"
 docling-tools = "docling.cli.tools:app"
+
+[[tool.poetry.source]]
+name = "tuna"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+priority = "primary"
 
 [build-system]
 requires = ["poetry-core"]

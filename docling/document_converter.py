@@ -13,6 +13,7 @@ from docling.backend.asciidoc_backend import AsciiDocBackend
 from docling.backend.csv_backend import CsvDocumentBackend
 from docling.backend.docling_parse_v2_backend import DoclingParseV2DocumentBackend
 from docling.backend.html_backend import HTMLDocumentBackend
+from docling.backend.idp_backend import IDPDocumentBackend
 from docling.backend.json.docling_json_backend import DoclingJSONBackend
 from docling.backend.md_backend import MarkdownDocumentBackend
 from docling.backend.msexcel_backend import MsExcelDocumentBackend
@@ -117,6 +118,11 @@ class PdfFormatOption(FormatOption):
     backend: Type[AbstractDocumentBackend] = DoclingParseV2DocumentBackend
 
 
+class IDPFormatOption(FormatOption):
+    pipeline_cls: Type = SimplePipeline
+    backend: Type[AbstractDocumentBackend] = IDPDocumentBackend
+
+
 def _get_default_option(format: InputFormat) -> FormatOption:
     format_to_default_options = {
         InputFormat.CSV: FormatOption(
@@ -167,9 +173,11 @@ class DocumentConverter:
 
     def __init__(
         self,
+        use_idp: bool = False,
         allowed_formats: Optional[List[InputFormat]] = None,
         format_options: Optional[Dict[InputFormat, FormatOption]] = None,
     ):
+        self.use_idp = use_idp
         self.allowed_formats = (
             allowed_formats if allowed_formats is not None else [e for e in InputFormat]
         )
@@ -255,7 +263,7 @@ class DocumentConverter:
         start_time = time.monotonic()
 
         for input_batch in chunkify(
-            conv_input.docs(self.format_to_options),
+            conv_input.docs(self.format_to_options, use_idp=self.use_idp),
             settings.perf.doc_batch_size,  # pass format_options
         ):
             _log.info(f"Going to convert document batch...")
@@ -279,6 +287,8 @@ class DocumentConverter:
                 yield item
 
     def _get_pipeline(self, doc_format: InputFormat) -> Optional[BasePipeline]:
+        if self.use_idp:
+            return SimplePipeline(pipeline_options=IDPFormatOption)
         fopt = self.format_to_options.get(doc_format)
 
         if fopt is None:

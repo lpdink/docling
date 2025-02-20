@@ -1,10 +1,13 @@
-from docling_core.types.doc import DoclingDocument
-from docling.backend.abstract_backend import DeclarativeDocumentBackend
-from docling.datamodel.base_models import InputFormat
-from io import BytesIO
-from docling.datamodel.document import InputDocument
-from docling.backend.md_backend import MarkdownDocumentBackend
 import json
+from io import BytesIO
+
+from docling_core.types.doc import DoclingDocument
+
+from docling.backend.abstract_backend import DeclarativeDocumentBackend
+from docling.backend.md_backend import MarkdownDocumentBackend
+from docling.datamodel.base_models import InputFormat
+from docling.datamodel.document import InputDocument
+
 
 def walk(idp_raw_result) -> DoclingDocument:
     # Create base document structure
@@ -14,27 +17,27 @@ def walk(idp_raw_result) -> DoclingDocument:
         name="file",
         origin={
             "mimetype": "text/markdown",
-            "binary_hash": 12345678987654321, # TODO: Implement hash
-            "filename": "file.md"
+            "binary_hash": 12345678987654321,  # TODO: Implement hash
+            "filename": "file.md",
         },
         furniture={
             "self_ref": "#/furniture",
             "children": [],
             "name": "_root_",
-            "label": "unspecified"
+            "label": "unspecified",
         },
         body={
             "self_ref": "#/body",
             "children": [],
             "name": "_root_",
-            "label": "unspecified"
+            "label": "unspecified",
         },
         groups=[],
         texts=[],
         pictures=[],
         tables=[],
         key_value_items=[],
-        pages={}
+        pages={},
     )
 
     # Helper function to create text node
@@ -46,10 +49,10 @@ def walk(idp_raw_result) -> DoclingDocument:
             "label": "paragraph" if item["type"] == "text" else item["type"],
             "prov": [],
             "orig": item["text"],
-            "text": item["text"]
+            "text": item["text"],
         }
 
-    # Helper function to create picture node 
+    # Helper function to create picture node
     def create_picture_node(item, index):
         return {
             "self_ref": f"#/pictures/{index}",
@@ -65,11 +68,11 @@ def walk(idp_raw_result) -> DoclingDocument:
                 "dpi": 300,
                 "size": {
                     "width": float(item.get("width", 0)),
-                    "height": float(item.get("height", 0))
+                    "height": float(item.get("height", 0)),
                 },
-                "uri": item.get("markdownContent", "")
+                "uri": item.get("markdownContent", ""),
             },
-            "annotations": []
+            "annotations": [],
         }
 
     # TODO: Implement table node creation
@@ -78,10 +81,10 @@ def walk(idp_raw_result) -> DoclingDocument:
     text_index = 0
     picture_index = 0
     stack = []  # Stack to track parent nodes
-    
+
     for item in idp_raw_result:
         level = item["level"]
-        
+
         # Create node based on type
         if item["type"] == "figure":
             node = create_picture_node(item, picture_index)
@@ -111,13 +114,14 @@ def walk(idp_raw_result) -> DoclingDocument:
 
     return doc
 
+
 if __name__ == "__main__":
-    with open("../../idp.json", "r", encoding='utf-8') as f:
+    with open("../../idp.json", "r", encoding="utf-8") as f:
         idp_raw_result = json.load(f)
     docling_result = walk(idp_raw_result)
     # Convert to dictionary first, then to JSON with ensure_ascii=False
     print(json.dumps(docling_result.dict(), indent=4, ensure_ascii=False))
     # save to out.json with UTF-8 encoding
-    with open("out.json", "w", encoding='utf-8') as f:
+    with open("out.json", "w", encoding="utf-8") as f:
         json.dump(docling_result.dict(), f, indent=4, ensure_ascii=False)
     # print(docling_result)
